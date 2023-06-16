@@ -11,7 +11,7 @@ class Vehicle {
     }
 
     // Function to randomly determine if the vehicle was damaged.
-    drive() {
+    getDamage() {
         let isDamaged = false;
         const chance = Math.floor(Math.random() * 26);
 

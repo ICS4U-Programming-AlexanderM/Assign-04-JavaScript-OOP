@@ -16,7 +16,7 @@ class Rental {
         let cost;
 
         // Determine damage.
-        if (this._vehicle.drive()) {
+        if (this._vehicle.getDamage()) {
             cost = this._vehicle._baseCost + (this._customer._length * this._vehicle._multiplier) + 2000;
             costString = "Due to repair fees, $" + cost;
         } else {
